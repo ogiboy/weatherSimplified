@@ -1,1 +1,1 @@
-# weatherSimplified
+https://ogiboy.github.io/weatherSimplified/
