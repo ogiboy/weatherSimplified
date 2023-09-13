@@ -20,7 +20,7 @@ document.querySelector(".search").onsubmit = (e) => {
   addHistory(cityName);
 
   // api call for location data
-  const geocodingApi = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
+  const geocodingApi = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
   fetch(geocodingApi)
     .then((response) => {
       if (!response.ok) {
