@@ -80,13 +80,13 @@ footer {
   padding: 0 20px;
 }
 
-a {
+footer a {
   background-color: #73fbd3;
   color: #44e5e7;
 }
 
-a:active,
-a:hover {
+footer a:active,
+footer a:hover {
   color: #4a8fe7;
 }
 
@@ -107,6 +107,37 @@ footer p:hover {
   100% {
     opacity: 1;
   }
+}
+
+/* body::before {
+  content: "^";
+  position: sticky;
+  left: 97%;
+  top: 90%;
+  position: fixed;
+  border: 1px solid red;
+} */
+
+.toTop {
+  width: 40px;
+  height: 40px;
+  position: sticky;
+  left: 97%;
+  top: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  position: fixed;
+  cursor: pointer;
+}
+
+.toTop a {
+  margin: auto;
+}
+
+.toTop:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Media queries */

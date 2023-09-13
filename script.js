@@ -169,3 +169,13 @@ function showHistory() {
   }
 }
 window.addEventListener("DOMContentLoaded", showHistory);
+
+// smooth toTop
+
+document.getElementById("toTopLink").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
