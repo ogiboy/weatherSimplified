@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple weather app made by a frontend developer student."
+    />
+    <title>Weather Simplified</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weather Simplified</h1>
+      <div class="container">
+        <form class="search">
+          <!-- <label for="findLocation">Location: </label> -->
+          <input
+            type="text"
+            id="findLocation"
+            min="3"
+            max="30"
+            required
+            placeholder="Enter your location"
+          />
+        </form>
+        <div class="results">
+          <div class="userLocation">
+            <h2>Location</h2>
+            <ul id="showResult"></ul>
+          </div>
+          <h2>Weather Conditions</h2>
+          <div class="weather"></div>
+        </div>
+      </div>
+      <div class="searchHistory">
+        <h4>Search History</h4>
+        <ul id="showHistory"></ul>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+  <footer>
+    <p>Made by Ogiboy with love <span class="emote">🌈</span> ©2023</p>
+    <a href="https://github.com/ogiboy" target="_blank">GitHub</a>
+  </footer>
+</html>

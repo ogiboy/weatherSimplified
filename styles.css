@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  cursor: default;
+}
+
+.wrapper {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(#59d2fe, #5c7aff);
+  color: white;
+}
+
+.wrapper > h1 {
+  font-size: 5em;
+  font-style: italic;
+  text-decoration: underline;
+  letter-spacing: 10px;
+  margin: 30px auto;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  font-size: x-large;
+  direction: ltr;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  text-align: center;
+  color: lightslategray;
+  margin: 15px;
+}
+
+input:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+table,
+td,
+th {
+  border: 1px solid white;
+  margin: 30px auto;
+  max-width: 90%;
+  min-width: 90%;
+  line-height: 25px;
+}
+
+.userLocation,
+.userLocation h2 {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 25px;
+}
+
+.searchHistory ul li {
+  display: inline-block;
+  margin: 1px 3px;
+}
+
+/* h2 {
+  display: none;
+} */
+
+footer {
+  background-color: #73fbd3;
+  color: #44e5e7;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+a {
+  background-color: #73fbd3;
+  color: #44e5e7;
+}
+
+a:active,
+a:hover {
+  color: #4a8fe7;
+}
+
+footer p:hover {
+  color: #4a8fe7;
+}
+
+.emote {
+  animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+  10% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media queries */
+
+@media (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+  .wrapper h1 {
+    font-size: 1.5em;
+  }
+  input {
+    max-width: 70%;
+    font-size: 1em;
+  }
+  table,
+  th,
+  td {
+    max-width: 75px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper h1 {
+    font-size: 2.5em;
+  }
+  input {
+    max-width: 70%;
+    font-size: 1em;
+  }
+  table,
+  td,
+  th {
+    width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .wrapper h1 {
+    max-width: 100%;
+    font-size: x-large;
+  }
+  input {
+    max-width: 50%;
+    font-size: small;
+  }
+  table,
+  td,
+  th {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wrapper h1 {
+    font-size: 3em;
+  }
+  input {
+    max-width: 50%;
+    font-size: small;
+  }
+  table,
+  td,
+  th {
+    width: 100%;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .wrapper h1 {
+    max-width: 100%;
+    font-size: 10em;
+  }
+  input {
+    width: 700px;
+    height: 60px;
+    font-size: 2em;
+  }
+}
