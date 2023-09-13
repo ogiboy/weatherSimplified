@@ -173,6 +173,9 @@ footer p:hover {
   th {
     width: 100%;
   }
+  .toTop {
+    left: 85%;
+  }
 }
 
 @media (min-width: 426px) and (max-width: 767px) {
@@ -192,7 +195,7 @@ footer p:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .wrapper h1 {
     font-size: 3em;
   }
@@ -206,6 +209,9 @@ footer p:hover {
     width: 100%;
     max-width: 80%;
   }
+  .toTop {
+    left: 93%;
+  }
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
@@ -217,5 +223,8 @@ footer p:hover {
     width: 700px;
     height: 60px;
     font-size: 2em;
+  }
+  .toTop {
+    left: 95%;
   }
 }
